@@ -4,12 +4,13 @@
 }
 
 body{
-    background-image: url(img/plano\ de\ fundo\ 1.png)
+    background-image: url(img/plano\ de\ fundo\ 1.png);
+    background-size: 100%;
+    
 }
 
-
-mai{
-    background-color: rgba(170, 4, 170, 0.521);
+.home{
+    background-image: url(img/Plano\ de\ fundo\ 2.png);
     padding: 30px;
     border-radius: 20px  
 }
@@ -20,7 +21,7 @@ h1,h2,p,span {
 
 }
 h4{
-    color: grey;
+    color: rgb(121, 185, 245);
 }
 .logo{
     width: 4%;
@@ -78,7 +79,7 @@ section{
         font-size: 165%;
     }
     .palavra{
-        font-size: 80%;
+        font-size: 143%;
     }
     
 }
@@ -236,11 +237,12 @@ section{
 
 /*2º Seção apresentação*/
    
-.Apresentacao
+.apresentacao
 {
-    display: flex
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(img/Plano\ de\ fundo\ 2.png);
 }
 
