@@ -246,3 +246,11 @@ section{
     background-image: url(img/Plano\ de\ fundo\ 2.png);
 }
 
+/*Responsividade Apresentação*/
+
+@media screen and (max-width: 320px) {
+    .tituloAp{
+        font-size: 49%
+    }
+    
+}
