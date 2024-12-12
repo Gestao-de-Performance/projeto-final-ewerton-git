@@ -20,10 +20,40 @@ footer{
     padding: 2%;
 }
 
-.tamanhoSecao{
-    margin: 4% 15%
+.tamanhodaSecao{
+    margin: 0 15%;
 }
+.cabecalho{
+    color: #ffffff;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    }  
 
+    .imgTI{
+        width: 300px;
+        height: auto;
+    }
+
+    .saudacao{
+        font-size: 30px;
+    }
+
+    .nome{
+        font-size: 80px;
+    }
+
+    .profissao{
+        font-size: 30px;
+    }
+
+    header{
+        height: 500px;
+    }
+    .logo li{
+        list-style: none;
+    }
 
 /*Cabeçalho*/
 .menuNavegacao{
@@ -62,24 +92,12 @@ footer{
 .mobileIcon{
     display: none;
 }
-.cabecalho{
-    color: #ffffff;
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    align-items: center;
-}
-.saudacao{
-    font-size: 12px;
-}
-.nome{
-    font-size: 30px;
-}
+
 
 /*Responsividade Menu Navegação*/
 @media screen and (max-width:730px) {
     .menu-nav{
-        padding: 1.5rem 4rem;
+        padding: 0.5rem 2rem;
     }
     .navIten{
         display: none;
@@ -107,7 +125,6 @@ footer{
         padding-top: 5rem;
         list-style: none;
         
-        
     }
     .open{
         display: block;
@@ -118,18 +135,55 @@ footer{
 @media screen and (max-width:500px){
     .cabecalho{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        justify-content: space-evenly;
+    }
+    .imgTI{
+        width: 60px;
+        height: auto;
+    }
+    .profissao{
+        font-size: 8px;
     }
     
+}
+@media screen and (max-width:360px) {
+    .cabecalho{
+        color: #ffffff;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .saudacao{
+        font-size: 12px;
+    }
+    .nome{
+        font-size: 30px;
+    }
+    .logo li{
+        list-style: none;
+    }
+
+   
 }
 
 /*Apresentação*/
 main{
     background-image: url(img/Plano\ de\ fundo\ 2.png);
     background-size: 100%;
+    color: #ffffff;
 }
 .apresentacao{
     display: flex;
+    flex-direction: column;
     align-items: center;
+}
+.tituloAp{
+    font-size: 32px;
+}
+.biografia{
+    font-size: 22px;
+    text-align: justify;
 }
