@@ -18,22 +18,34 @@
 
 </head>
 
-
 <body id="corpo">
     <header>
-        <nav>
-            <ul class="logo"><li><a href="#"><img width="60px" src="img/ep-2.png" alt="logo Ewerton Pereira (EP)" ></a></li></ul>
-            <ul class="menuNavegacao">
-                <li><a href="#"><img width="60px" src="img/git.png"></a></li>
-                <li><a href="#"><img width="55px" src="img/wpp.png"></a></li>
-                <li><a href="#"><img width="50px" src="img/inst.png"></a></li>
-                <li><a href="#"><img width="60px" src="img/e-mail.png"></a></li>
-            </ul>
+        <nav class="menu-nav">
+            <div class="logo">
+             <ul><li><a href="#home"><img width="60px" src="img/ep-2.png" alt="logo Ewerton Pereira (EP)" ></a></li></ul>
+            </div>
+            <div class="menuNavegacao">
+                <ul>
+                     <li><a class="navIten" href="https://github.com/ewerton-git" target="_blank"><img width="60px" src="img/git.png"></a></li>
+                    <li><a class="navIten" href="https://w.app/ewertonp" target="_blank"><img width="60px" src="img/wpp.png"></a></li>
+                    <li><a class="navIten" href="https://br.linkedin.com/in/ewerton-pereira-b129141b4" target="_blank"><img width="60px" src="img/linkedin.png"></a></li>
+                    <li><a class="navIten" href="mailto:ewertonpereira-silva@hotmail.com" target="_blank"><img width="60px" src="img/e-mail.png"></a></li>
+                </ul>
+            </div>
+            <div class="mobileIcon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu-white.svg" alt="Menu"></button>
+            </div>
         </nav>
-    </header>
+        <div class="mobileMenu">
+            <ul>
+                <li><a class="navIten" href="https://github.com/ewerton-git" target="_blank"><img width="60px" src="img/git.png"></a></li>
+               <li><a class="navIten" href="https://w.app/ewertonp" target="_blank"><img width="60px" src="img/wpp.png"></a></li>
+               <li><a class="navIten" href="https://br.linkedin.com/in/ewerton-pereira-b129141b4" target="_blank"><img width="60px" src="img/linkedin.png"></a></li>
+               <li><a class="navIten" href="mailto:ewertonpereira-silva@hotmail.com" target="_blank"><img width="60px" src="img/e-mail.png"></a></li>
+           </ul>
+        </div>
 
-    <main>
-        <section id="home">
+        <section id="home" class="tamanhodaSecao">
             <div class="cabecalho">
                 <div class="tituloInicial">
                     <h4 class="saudacao">Olá, seja bem vindo(a), eu sou</h4> 
@@ -45,15 +57,17 @@
                 </div>  
             </div>      
         </section>
+    </header>
 
-        <section class="apresentacao">
+    <main>
+        <section class="tamanhodaSecao">
             <div>
                 <div>
                     <header><h2 class="tituloAp"><b>Sobre mim!</b></h2></header>
                 </div>
             </div>
             <div >
-                <p >
+                <p class="biografia">
                     Me chamo Ewerton Pereira, sou técnico em Redes de computadores e 
                     graduando no curso de Gestão TI pela Unintese. Desenvolvo páginas responsívas e de layout atrativo. 
                     Tenho uma trajetória de cerca de 8 anos trabalhando com suporte técnico,
@@ -65,8 +79,39 @@
             <div>
                 <img class="perfil"  width="400px" height="500px" src="img/eu.png">
             </div>
-
+        </section>
+        <section class="tamanhodaSecao">
+            <div class="skills">
+                <h2 class="tituloHs"> Hard Skills</h2>
+                <li><img width="200px" src="img/html5.png"></li>
+                <li><img width="200px" src="img/css3.png"></li>
+                <li><img width="100px" src="img/redes.png"></li>
+                <li><img width="200px" src="img/suporte.png"></li>
+            </div>
+        </section>
+        <section class="tamanhodaSecao">
+            <div class="projetos">
+                <li><a href="https://ewerton-git.github.io/dark/" target="_blank"><img width="60px" src="img/proj.dark.png"></a></li>
+                <li><a href="https://ewerton-git.github.io/dark/" target="_blank"><img width="60px" src="img/proj.unintese.jpg" ></a></li>
+            </div>
+            
         </section>
     </main>
+    <footer>
+        <div>
+            <div>
+                <img width="10px" src="img/ep-2.png">
+                <div>
+                    <a><img src="img/inst.png"></a>
+                    <a><img src="img/linkedin.png"></a>
+                    <a><img src="img/git.png"></a>
+                    <a><img src="img/wpp.png"></a>
+                </div>
+            </div>
+            <a><img src="img/qr-code.png"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,291 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prompt:ital@0;1&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-body{
+header{
     background-image: url(img/plano\ de\ fundo\ 1.png);
-    background-attachment: fixed;
-    border-radius: 0%;
-   background-size: 100%;
-   background-repeat: no-repeat;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
-h1,h2,p,span {
-    color: blanchedalmond;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: justify;
-
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
 }
-h4{
-    color: grey;
+
+.tamanhoSecao{
+    margin: 4% 15%
+}
+
+
+/*Cabeçalho*/
+.menuNavegacao{
+    display: flex;
+    align-items: center;
+}
+.menu-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+    
+    
 }
 .logo{
-    width: 4%;
-    height: 23%;
-    margin: 0%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    
 }
-
-.palavra{
-    display: flex; 
-    justify-content: space-around;
-    margin: 4px;
-    margin-top: -23px; 
-    font-size: 29px;
-}
-
-section{
-    margin: 3%;
-    padding: 4%;
-    font-size: 300%;
-    flex-direction: column;
+.menuNavegacao ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
     display: flex;
 }
 
+.navIten{
+    margin: 0 15px ;
+    width: 1px;
+    height: 1px;
 
-.nome{
-    font-size: 212%;
-    line-height: 110%;
-    margin-bottom: -1%;
 }
-
-.profissao{
-    margin-top: 0%;
-    color: #4adedd;
+.mobileMenu{
+    display: none;
+}
+.mobileIcon{
+    display: none;
 }
 .cabecalho{
+    color: #ffffff;
     display: flex;
-    flex-direction: row;
+    text-align: center;
     justify-content: space-between;
-    align-content: center;
-    flex-wrap: nowrap;
     align-items: center;
 }
- .menuNavegacao{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 47px;
-    list-style-type: none;
- }
-/*Responsividade cabeçalho*/
-@media screen and (max-width: 1921px){
-    .imgTI{
-        width: 300px;
-        height: 100%;
-        margin: 0%;
-    }
-    .saudacao{
-        font-size: 165%;
-    }
-    .palavra{
-        font-size: 80%;
-    }
-    
+.saudacao{
+    font-size: 12px;
 }
-@media screen and (max-width: 1376px){
-    .saudacao{
-        font-size: 109%;
-    }
-    .nome{
-        font-size: 173%;
-    }
-    .profissao{
-        font-size: 100%;
-    }
-
-    .imgTI{
-        width: 300px;
-        height: 300px;
-    }
-    
-}
-@media screen and (max-width: 1100px){
-    .cabecalho{
-        width: 100%;
-        flex-direction: column;
-    }  
+.nome{
+    font-size: 30px;
 }
 
-@media screen and (max-width: 768px){
-    .saudacao{
-        font-size: 100%;
-    }  
-}
-
-@media screen and (max-width: 749px){
-    .tituloInicial{
-       font-size: 69%;
-    }  
-    .imgTI{
-        width: 80%;
-        height: auto;
-        display: flex;
-        justify-content: space-around;
-    
-    }  
-    .cabecalho{
-        width: 100%;
-        flex-direction: column;
-    }  
-
-}
-@media screen and (max-width: 360px){
-    .tituloInicial{
-        font-size: 40%;    
-    }  
-    .nome{
-        margin-top: 2%;
+/*Responsividade Menu Navegação*/
+@media screen and (max-width:730px) {
+    .menu-nav{
+        padding: 1.5rem 4rem;
     }
-    .palavra{
-        font-size: 80%;
-        margin: 3%;
-        display: flex;
-        align-content: flex-start;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
-    }
-    .inicio{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .logo{
-        width: 20px;
-        height: 20px;
-    }
-}
-@media screen and (max-width: 320px){
-    .tituloInicial{
-        font-size: 40%;    
-    }  
-    .imgTI{
-        width: 67%;
-        height: auto;
-        display: flex;
-        justify-content: space-around;
-        margin-top: 28%;
-    
-    } 
-    .nome{
-        margin-top: 1%;
-        font-size: 152%;
-    }
-    .saudacao{
-        margin-top: 13%;
-        font-size: 90%;
-    }   
-    .palavra{
-        font-size: 60%;
-        margin: 3%;
-        display: flex;
-        align-content: flex-start;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
-    }
-    .inicio{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .logo{
-        width: 20px;
-        height: 20px;
-    }
-}  
-
-@media screen and (max-width: 200px){
-    .tituloInicial{
-        font-size: 40%;    
-    }  
-    .imgTI{
-        width: 67%;
-        height: auto;
-        display: flex;
-        justify-content: space-around;
-        margin-top: 28%;
+    .navIten{
+        display: none;
         
-    } 
-    .nome{
-        margin-top: 1%;
-        font-size: 104%;
     }
-    .saudacao{
-        margin-top: 13%;
-        font-size: 115%;
-    }
-    .profissao{
-        margin-top: -2%;
-        font-size: 77%;
-    }
-    .cabecalho{
-        width: 89%;
-    }
-    .palavra{
-        font-size: 14px;
-        margin-top: 2px;
+    .mobileIcon{
         display: flex;
+        
     }
-    .inicio{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-    font-size: 10px;
+    .mobileIcon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobileMenu ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1rem;
+        list-style: none;
+        
+    }
+    .mobileMenu .navIten{
+        display: block;
+        padding-top: 5rem;
+        list-style: none;
+        
+        
+    }
+    .open{
+        display: block;
     }
 }
 
-
-/*2º Seção apresentação*/
-   
-.apresentacao
-{
-    padding-block: 150px;
-    background-image: url(img/Plano\ de\ fundo\ 2.png);
-    width: 100%;
-    margin: 0;
-    margin-top: 30%;
-}
-}
-.biografia{
-    width: 110%;
-    text-indent: 40px;
-    display: flex;
-}
-.tituloAp{
-    margin-top: -34%;
-}
-
-/*Responsividade da apresentação*/
- @media screen and (max-width: 320px) {
-    .tituloAp {
-    font-size: 55%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   }
-   .biografia{
-    font-size: 39%;
-    
-   }
-    
-   .perfil{
-    width: 91%;
-    height: auto;
-    margin: 5%;
-   }
- }
-
-   @media screen and (max-width: 1920px) {
-    .apresentacao{
+/*Responsividade Cabeçalho*/
+@media screen and (max-width:500px){
+    .cabecalho{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     
-   }
-
- 
+}
