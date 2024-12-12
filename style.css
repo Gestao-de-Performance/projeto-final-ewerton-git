@@ -123,3 +123,13 @@ footer{
     }
     
 }
+
+/*Apresentação*/
+main{
+    background-image: url(img/Plano\ de\ fundo\ 2.png);
+    background-size: 100%;
+}
+.apresentacao{
+    display: flex;
+    align-items: center;
+}
