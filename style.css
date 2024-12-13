@@ -21,7 +21,7 @@ footer{
 }
 
 .tamanhodaSecao{
-    margin: 0 15%;
+    margin: 0 3%;
 }
 .cabecalho{
     color: #ffffff;
@@ -182,8 +182,21 @@ main{
 }
 .tituloAp{
     font-size: 32px;
+    margin-top: 20px;
 }
 .biografia{
-    font-size: 22px;
+    font-size: 26px;
     text-align: justify;
+}
+.perfil{
+    border-radius: 200px;
+}
+
+/*Skills*/
+.skills{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 }
