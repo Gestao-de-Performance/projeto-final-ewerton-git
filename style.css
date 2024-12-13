@@ -187,16 +187,77 @@ main{
 .biografia{
     font-size: 26px;
     text-align: justify;
+    text-indent: 45px;
 }
 .perfil{
-    border-radius: 200px;
+    border-radius: 150px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    margin: 13.2px;
+}
+.perfil:hover{
+    transform: scale(1.1);
+    box-shadow: 0  5px rgba(59, 18, 112, 0.2);
 }
 
+/*Fim da Apresentação*/
+
 /*Skills*/
+
 .skills{
-    list-style: none;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 6%;
+    list-style: none;
 }
+.tituloSkills{
+    text-align: center;
+    font-size: 32px;
+    margin-top: 6%;
+}
+.imgSkills{
+    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+    max-width: 340px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    margin: 13.2px;
+    border-radius: 15px;
+    margin
+}
+.imgSkills:hover{
+    transform: scale(1.1);
+    box-shadow: 0  5px rgba(59, 18, 112, 0.2);
+}
+
+/*Fim da skills*/
+
+/*Projetos*/
+
+.projetos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 3%;
+}
+.botao{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    max-width: 340px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    margin: 13.2px;
+}
+.botao:hover{
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(59, 18, 112, 0.2);
+}
+
+.tituloprojeto{
+    padding: 4%;
+}
+.descricaoProj{
+     margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
 }
