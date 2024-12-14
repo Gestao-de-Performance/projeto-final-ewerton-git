@@ -31,29 +31,33 @@ footer{
     align-items: center;
     }  
 
-    .imgTI{
-        width: 300px;
-        height: auto;
+.imgTI{
+    width: 300px;
+    height: auto;
     }
 
-    .saudacao{
-        font-size: 30px;
+.saudacao{
+     font-size: 30px;
     }
 
-    .nome{
-        font-size: 80px;
+.nome{
+    font-size: 80px;
     }
 
-    .profissao{
-        font-size: 30px;
+.profissao{
+    font-size: 30px;
     }
 
-    header{
-        height: 500px;
+header{
+    height: 500px;
     }
-    .logo li{
-        list-style: none;
+.logo li{
+    list-style: none;
     }
+a{
+    text-decoration: none;
+}
+
 
 /*Cabeçalho*/
 .menuNavegacao{
@@ -229,11 +233,19 @@ main{
     transform: scale(1.1);
     box-shadow: 0  5px rgba(59, 18, 112, 0.2);
 }
+.tamanhodaSecaoHs{
+    margin: 8rem 0;
+}
 
 /*Fim da skills*/
 
 /*Projetos*/
-
+.tituloProj{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 32px;
+}
 .projetos{
     display: flex;
     align-items: center;
@@ -244,9 +256,11 @@ main{
 }
 .botao{
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-    max-width: 340px;
+    max-width: 350px;
     transition: transform 0.5s, box-shadow 0.5s;
     margin: 13.2px;
+    color: #ffffff;
+    font-size: 22px;
 }
 .botao:hover{
     transform: scale(1.1);
@@ -257,7 +271,27 @@ main{
     padding: 4%;
 }
 .descricaoProj{
-     margin-top: 10%;
+    margin-top: 10%;
     display: flex;
     justify-content: space-between;
+}
+.tamanhodaSecaoPro{
+    padding: 9.5rem 0;
+}
+
+/*Fim dos projetos*/
+
+/*Rodapé*/
+.footer{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: #ffffff;
+}
+.textFooter{
+    font-size: 22px;
 }
