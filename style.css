@@ -415,6 +415,29 @@ main{
     .tamanhodaSecaoPro{
         padding: 7.5rem 0;
     }
+
+}
+@media screen and (max-width:360px) {
+    .tamanhodaSecaoPro{
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tituloProj{
+        font-size: 12px;
+    
+    }
+    .projetos{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .botao{
+        width: 93px;
+        font-size: 7px;
+    }
+    
+    
 }
 
 /*Footer*/
