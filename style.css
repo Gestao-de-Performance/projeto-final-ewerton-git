@@ -32,8 +32,8 @@ footer{
     }  
 
 .imgTI{
-    width: 300px;
-    height: auto;
+    width: 150px ;
+    height: 150px ;
     }
 
 .saudacao{
@@ -49,13 +49,16 @@ footer{
     }
 
 header{
-    height: 500px;
+    height:;
     }
 .logo li{
     list-style: none;
     }
 a{
     text-decoration: none;
+}
+.imgSkills{
+    width: 250px;
 }
 
 
@@ -136,40 +139,77 @@ a{
 }
 
 /*Responsividade Cabeçalho*/
+
+@media screen and (max-width:1920px) {
+    .cabecalho{
+        padding: 54px 0;
+    }
+    
+} 
+@media screen and (max-width:803px){
+    .cabecalho{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 7px 0;
+    }
+    .imgTI{
+        width: 10rem;
+        height: auto;
+    }
+    .saudacao{
+        font-size: 1.5rem;
+    }
+    .nome{
+        font-size: 2.5rem;
+    }
+    .profissao{
+        font-size: 1.5rem;
+    }
+}
+
 @media screen and (max-width:500px){
     .cabecalho{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
     }
     .imgTI{
-        width: 60px;
+        width: 70px;
         height: auto;
     }
+    .saudacao{
+        font-size: 10px;
+    }
+    .nome{
+        font-size: 25px;
+    }
     .profissao{
-        font-size: 8px;
+        font-size: 10px;
     }
     
 }
-@media screen and (max-width:360px) {
+@media screen and (max-width: 360px) {
     .cabecalho{
         color: #ffffff;
         display: flex;
-        text-align: center;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;  
+    }
+    
+
+    .imgTI{
+        width: 60px;
+        height: auto;
     }
     .saudacao{
         font-size: 12px;
     }
     .nome{
-        font-size: 30px;
+        font-size: 25px;
     }
     .logo li{
         list-style: none;
     }
-
    
 }
 
@@ -187,6 +227,7 @@ main{
 .tituloAp{
     font-size: 32px;
     margin-top: 20px;
+    text-align: center;
 }
 .biografia{
     font-size: 26px;
@@ -202,8 +243,64 @@ main{
     transform: scale(1.1);
     box-shadow: 0  5px rgba(59, 18, 112, 0.2);
 }
+.apresentacaoMobile{
+    display: none;
+}
 
 /*Fim da Apresentação*/
+
+/*Responsividade Apresentação*/
+@media screen and (max-width: 1920px) {
+    .apresentacao{
+        padding: 3rem 0;
+    }
+    .biografia{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .tituloAp{
+        font-size: 11px;
+        margin-top: -10px;
+    }
+    .biografia{
+        font-size: 1rem;
+    }
+    .perfil{
+        width: 11.5rem;
+    }
+    .apresentacao{
+        padding: 1rem 0;
+    }
+}
+@media screen and (max-width:360px) {
+    .apresentacao{
+        display: none;
+    }
+    .tituloAp{
+        display: none;
+    }
+
+    .tituloApMb{
+        text-align: center;
+        font-size: 12px;
+    }
+    .apresentacaoMobile{
+        display: block;
+    }
+    .biografiaMb{
+        font-size: 10px;
+        padding: 0px 8px;
+        text-align: justify;
+    }
+    .perfilMb{
+        float: left;
+        margin-right: 20px;
+        width: 60px;
+        border-radius: 43px;
+    }
+    
+}
 
 /*Skills*/
 
@@ -239,7 +336,34 @@ main{
 
 /*Fim da skills*/
 
-/*Projetos*/
+/*Responsividade Hard Skills*/
+
+@media screen and (max-width: 1980px) {
+    .tamanhodaSecaoHs{
+        padding: 8rem 0;
+    }
+    
+}
+@media screen  and (max-width: 768px) {
+    .tamanhodaSecaoHs{
+        padding: 1rem 0;
+        margin: 1rem 0;
+    }
+    .imgSkills{
+        width: 100px;
+    }
+}
+@media screen and (max-width:360px) {
+    .tituloSkills{
+        font-size: 12px;
+    }
+    .imgSkills{
+        width: 59px;
+    }
+    
+}
+
+/*Projects*/
 .tituloProj{
     display: flex;
     flex-direction: column;
@@ -281,7 +405,19 @@ main{
 
 /*Fim dos projetos*/
 
-/*Rodapé*/
+/*Responsividade Projetos*/
+@media screen and (max-width:768px) {
+
+    .botao{
+        width: 150px;
+        font-size: 10px
+    }
+    .tamanhodaSecaoPro{
+        padding: 7.5rem 0;
+    }
+}
+
+/*Footer*/
 .footer{
     list-style: none;
     display: flex;
@@ -294,4 +430,17 @@ main{
 }
 .textFooter{
     font-size: 22px;
+}
+
+
+/*Responsividade footer*/
+@media screen and (max-width: 768px) {
+    .textFooter{
+        font-size: 10px;
+    }
+    .imgFooter{
+        width: 25px;
+
+    }
+    
 }
