@@ -22,6 +22,7 @@ footer{
 
 .tamanhodaSecao{
     margin: 0 3%;
+   
 }
 .cabecalho{
     color: #ffffff;
@@ -32,9 +33,10 @@ footer{
     }  
 
 .imgTI{
-    width: 150px ;
-    height: 150px ;
-    }
+    width: 15rem;
+    height: 14rem;
+}
+ 
 
 .saudacao{
      font-size: 30px;
@@ -58,7 +60,7 @@ a{
     text-decoration: none;
 }
 .imgSkills{
-    width: 250px;
+    width: 100%;
 }
 
 
@@ -142,7 +144,7 @@ a{
 
 @media screen and (max-width:1920px) {
     .cabecalho{
-        padding: 54px 0;
+        padding: 14rem 0;
     }
     
 } 
@@ -214,6 +216,10 @@ a{
 }
 
 /*Apresentação*/
+.tamanhodaSecaoAp{
+    padding: 1rem;
+}
+
 main{
     background-image: url(img/Plano\ de\ fundo\ 2.png);
     background-size: 100%;
@@ -250,15 +256,11 @@ main{
 /*Fim da Apresentação*/
 
 /*Responsividade Apresentação*/
-@media screen and (max-width: 1920px) {
-    .apresentacao{
-        padding: 3rem 0;
-    }
-    .biografia{
-        font-size: 2.5rem;
-    }
-}
+
 @media screen and (max-width: 768px) {
+    .tamanhodaSecaoAp{
+        padding: 2rem 1.5rem;
+    }
     .tituloAp{
         font-size: 11px;
         margin-top: -10px;
@@ -269,9 +271,7 @@ main{
     .perfil{
         width: 11.5rem;
     }
-    .apresentacao{
-        padding: 1rem 0;
-    }
+
 }
 @media screen and (max-width:360px) {
     .apresentacao{
@@ -287,6 +287,7 @@ main{
     }
     .apresentacaoMobile{
         display: block;
+        margin-top: -28px;
     }
     .biografiaMb{
         font-size: 10px;
@@ -331,38 +332,37 @@ main{
     box-shadow: 0  5px rgba(59, 18, 112, 0.2);
 }
 .tamanhodaSecaoHs{
-    margin: 8rem 0;
+    margin: 6rem 0;
 }
 
 /*Fim da skills*/
 
 /*Responsividade Hard Skills*/
-
-@media screen and (max-width: 1980px) {
-    .tamanhodaSecaoHs{
-        padding: 8rem 0;
-    }
-    
-}
-@media screen  and (max-width: 768px) {
-    .tamanhodaSecaoHs{
-        padding: 1rem 0;
-        margin: 1rem 0;
-    }
-    .imgSkills{
-        width: 100px;
-    }
-}
 @media screen and (max-width:360px) {
+    .tamanhodaSecaoHs{
+        margin-top: -1rem;
+    }
     .tituloSkills{
         font-size: 12px;
     }
     .imgSkills{
         width: 59px;
     }
-    
 }
 
+@media screen  and (min-width: 768px) {
+    .imgSkills{
+        width: 31%;
+    }
+    .tamanhodaSecaoHs{
+        margin-top: -3rem ;
+    }
+}
+
+    
+
+/*Fim Responsividade HS*/
+ 
 /*Projects*/
 .tituloProj{
     display: flex;
@@ -400,12 +400,13 @@ main{
     justify-content: space-between;
 }
 .tamanhodaSecaoPro{
-    padding: 9.5rem 0;
+    padding: 11rem 0;
 }
 
 /*Fim dos projetos*/
 
 /*Responsividade Projetos*/
+
 @media screen and (max-width:768px) {
 
     .botao{
@@ -413,17 +414,19 @@ main{
         font-size: 10px
     }
     .tamanhodaSecaoPro{
-        padding: 7.5rem 0;
+        padding: 4rem 0;
     }
 
 }
 @media screen and (max-width:360px) {
     .tamanhodaSecaoPro{
-        padding: 1rem 0;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: -65px;
+        padding: 16px;
     }
+   
     .tituloProj{
         font-size: 12px;
     
@@ -433,8 +436,8 @@ main{
         flex-wrap: nowrap;
     }
     .botao{
-        width: 93px;
-        font-size: 7px;
+        width: 30%;
+        font-size: 12px;
     }
     
     
