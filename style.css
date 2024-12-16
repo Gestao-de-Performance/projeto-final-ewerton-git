@@ -60,7 +60,7 @@ a{
     text-decoration: none;
 }
 .imgSkills{
-    width: 100%;
+    width: 40%;
 }
 
 
@@ -144,7 +144,7 @@ a{
 
 @media screen and (max-width:1920px) {
     .cabecalho{
-        padding: 14rem 0;
+        padding: 11rem 0;
     }
     
 } 
@@ -350,7 +350,7 @@ main{
     }
 }
 
-@media screen  and (min-width: 768px) {
+@media screen  and (max-width: 768px) {
     .imgSkills{
         width: 31%;
     }
