@@ -7,11 +7,16 @@
     font-weight: 400;
     font-style: normal;
 }
+body{
+    background-image: linear-gradient(
+        45deg, black, #221133 
+     );
+}
 
-header{
-    background-image: url(img/plano\ de\ fundo\ 1.png);
+main{
+
     background-size: 100%;
-    background-repeat: no-repeat;
+    color: #ffffff;
 }
 
 footer{
@@ -60,7 +65,7 @@ a{
     text-decoration: none;
 }
 .imgSkills{
-    width: 40%;
+    width: 70%;
 }
 
 
@@ -220,11 +225,6 @@ a{
     padding: 1rem;
 }
 
-main{
-    background-image: url(img/Plano\ de\ fundo\ 2.png);
-    background-size: 100%;
-    color: #ffffff;
-}
 .apresentacao{
     display: flex;
     flex-direction: column;
@@ -306,13 +306,12 @@ main{
 /*Skills*/
 
 .skills{
-    display: flex;
-    align-items: center;
+    Display: flex;
     justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
     margin-top: 6%;
     list-style: none;
+    flex-direction: row;
+    align-items: center;
 }
 .tituloSkills{
     text-align: center;
@@ -321,7 +320,6 @@ main{
 }
 .imgSkills{
     box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
-    max-width: 340px;
     transition: transform 0.5s, box-shadow 0.5s;
     margin: 13.2px;
     border-radius: 15px;
@@ -350,9 +348,9 @@ main{
     }
 }
 
-@media screen  and (max-width: 768px) {
+@media screen  and (min-width: 768px) {
     .imgSkills{
-        width: 31%;
+        width: 80%;
     }
     .tamanhodaSecaoHs{
         margin-top: -3rem ;
